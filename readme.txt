@@ -16,7 +16,7 @@ This plugin requires [Easy Digital Downloads](http://wordpress.org/extend/plugin
 
 EDD Add To Cart Redirect allows you to redirect to any post, page, or download after the download has been added to the cart. It also allows you to set invidual downloads to redirect directly to the checkout, rather than all or none. It add's 2 new options to a download's edit/publish screen, in the "Download Settings" metabox that EDD adds.
 
-It works with and without ajax enabled from downloads &rarr; settings &rarr; misc, on download grids, and on single download pages.
+It works with and without ajax enabled from downloads &rarr; settings &rarr; misc, on download grids, and on single download pages. When EDD v2.1 is released there will be a "redirect" parameter that will work with the [purchase_link] shortcode.
 
 **Want more free EDD plugins?**
 
