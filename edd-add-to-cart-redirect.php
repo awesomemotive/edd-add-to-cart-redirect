@@ -132,9 +132,6 @@ if ( ! class_exists( 'EDD_Add_To_Cart_Redirect' ) ) {
 				}
 
 			}
-			else {
-				add_filter( 'plugin_action_links_' . plugin_basename( __FILE__ ), array( $this, 'settings_link' ), 10, 2 );
-			}
 		}
 
 		/**
@@ -184,19 +181,6 @@ if ( ! class_exists( 'EDD_Add_To_Cart_Redirect' ) ) {
 				// Load the default language files
 				load_plugin_textdomain( 'edd-atcr', false, $lang_dir );
 			}
-		}
-
-		/**
-		 * Plugin settings link
-		 *
-		 * @since 1.0
-		*/
-		public function settings_link( $links ) {
-			$plugin_links = array(
-				'<a href="' . admin_url( 'edit.php?post_type=download&page=edd-settings&tab=extensions' ) . '">' . __( 'Settings', 'edd-atcr' ) . '</a>',
-			);
-
-			return array_merge( $plugin_links, $links );
 		}
 
 		/**
