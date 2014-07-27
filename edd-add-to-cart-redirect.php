@@ -3,7 +3,7 @@
 Plugin Name: Easy Digital Downloads - Add To Cart Redirect
 Plugin URI: http://sumobi.com/
 Description: Redirects customer to another post/page/download after adding a download to the cart
-Version: 1.0
+Version: 1.0.1
 Author: Andrew Munro, Sumobi
 Author URI: http://sumobi.com/
 License: GPL-2.0+
@@ -35,7 +35,7 @@ if ( ! class_exists( 'EDD_Add_To_Cart_Redirect' ) ) {
 		/**
 		 * Plugin Version
 		 */
-		private $version = '1.0';
+		private $version = '1.0.1';
 
 		/**
 		 * Plugin Title
@@ -333,7 +333,7 @@ if ( ! class_exists( 'EDD_Add_To_Cart_Redirect' ) ) {
 		 * @param  [type] $download_id [description]
 		 * @return [type]              [description]
 		 */
-		public function add_hidden_field( $download_id, $args ) {
+		public function add_hidden_field( $download_id, $args = array() ) {
 			if ( ! edd_is_ajax_enabled() )
 				return;
 
@@ -353,7 +353,7 @@ if ( ! class_exists( 'EDD_Add_To_Cart_Redirect' ) ) {
 			}
 
 			if ( $download_id ) {
-				echo '<input type="text" name="edd_redirect" data-action="edd_redirect" class="edd-redirect" value="' . $download_id . '" />';
+				echo '<input type="hidden" name="edd_redirect" data-action="edd_redirect" class="edd-redirect" value="' . $download_id . '" />';
 			}
 			
 		}

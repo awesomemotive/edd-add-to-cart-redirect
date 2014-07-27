@@ -4,7 +4,7 @@ Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_i
 Tags: easy digital downloads, digital downloads, e-downloads, edd, sumobi, redirect, e-commerce, add to cart, Andrew, Andrew Munro
 Requires at least: 3.8
 Tested up to: 3.9.1
-Stable tag: 1.0
+Stable tag: 1.0.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -58,9 +58,13 @@ OR you can just install it with WordPress by going to Plugins >> Add New >> and 
 
 == Screenshots ==
 
-Comin soon
+Coming soon
 
 == Changelog ==
+
+= 1.0.1 =
+Fix: PHP Warning
+Fix: Hidden text field was showing on page when ajax is enabled
 
 = 1.0 =
 * Initial release
